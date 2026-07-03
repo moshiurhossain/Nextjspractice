@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${oswald.className}`}>
-      <Header/>
+     
       {children}
-      <Footer/>
+      
       </body>
     </html>
   );
