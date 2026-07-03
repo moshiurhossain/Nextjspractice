@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 import { Oswald } from 'next/font/google'
 
 export const metadata = {
@@ -9,11 +11,12 @@ const oswald = Oswald({ subsets: ['latin'] })
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-     
-    >
-      <body className={`${oswald.className}`}>{children}</body>
+    <html lang="en">
+      <body className={`${oswald.className}`}>
+      <Header/>
+      {children}
+      <Footer/>
+      </body>
     </html>
   );
 }

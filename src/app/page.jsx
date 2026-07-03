@@ -1,9 +1,14 @@
-import Header from '@/components/Header'
 import React from 'react'
+
 
  const page = () => {
   return (
-    <div><Header /></div>
+    <div>
+     
+    <h1>this is home page</h1>  
+      
+    
+    </div>
   )
 }
  export default page
