@@ -1,9 +1,14 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 
 const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
+    const [showMenu, setShowMenu] =useState(false)
+  return 
+  <>
+    <div >Navbar</div>
+  </>
+  
 }
 
 export default Navbar
