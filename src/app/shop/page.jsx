@@ -1,8 +1,9 @@
 import Navbar from '@/components/Navbar'
 import React from 'react'
+import Link from 'next/link'
 
 const page =async () => {
-  const data = await fetch('https://dummyjson.com/products')
+  const data = await fetch('https://dummyjson.com/products',{cache:'force-cache'})
   const {products} = await data.json()
   console.log(products)
 
